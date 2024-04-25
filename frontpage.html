@@ -11,11 +11,12 @@
       padding: 20px;
     }
     header {
-            padding: 10px 20px;
+            padding: 20px 50px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: rgba(255, 255, 255, 0.5);
+            padding-top: 3%;
         }
 
         .logo img {
@@ -46,12 +47,15 @@
 
         nav ul li a:hover {
             text-decoration:none;
-            height: 20%;
+            background-position: 10%;
+            background-color:skyblue;
          }
 
         nav ul li a.active {
-            background-color: rgb(235, 138, 135);
+            background-color: skyblue;
             color: #000000;
+            border-radius: 5px;
+            max-height: fit-content;
         }
     h1 {
       color: #204051;
@@ -154,15 +158,13 @@
         <img src="logo.jpg" alt="destiny finder">
     </div>
     <nav>
-        <ul>
-            
-            <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
-            <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
-            <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
-            <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
-            <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
-            <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
-            
+        <ul>            
+          <li><a href="new.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="explorepage.html">Tours</a></li>
+          <li><a href="Traveler.html">Traveler</a></li>
+          <li><a href="new.html#world-map">Contact Us</a></li>
+          <li><a href="login.html" class="active">Login</a></li>            
         </ul>
             
     </nav>
