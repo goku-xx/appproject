@@ -10,7 +10,6 @@
             background-color: #ffffff;
             margin: 0;
             padding: 0;
-            ;
         }
         video {
             position: fixed;
@@ -134,22 +133,18 @@
         </div>
         <nav>
             <ul>
-                
-                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
-                <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
-                <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html">Tours</a></li>
-                <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
-                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
-                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html" class="active">Login</a></li>
-                
+                <li><a href="new.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="explorepage.html">Tours</a></li>
+                <li><a href="Traveler.html">Traveler</a></li>
+                <li><a href="new.html#world-map">Contact Us</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
             </ul>
-                
         </nav>
-        
     </header>
     <div class="container">
         <div class="form-container">
-            <h1>Login </h1>
+            <h1>Login</h1>
             <h2>ENTER YOUR DETAILS AND EXPLORE MORE!</h2>
             <form id="loginForm" action="/login" method="post">
                 <label for="name">Name:</label>
@@ -172,6 +167,9 @@
     </div>
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
+            // Prevent form submission to see console logs
+            event.preventDefault();
+            console.log("Form submitted");
             window.location.href = 'frontpage.html';
         });
     </script>
