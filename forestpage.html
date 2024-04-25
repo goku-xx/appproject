@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #000000;
+        }
+        h1 {
+            color: #204051;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 0 auto;
+            background-color: #ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 0px;
+        }
+
+        .section h2 {
+            color: #070707;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; 
+        }
+
+        .image {
+            flex: 1; 
+            max-width: calc(25% - 10px); 
+            min-width: 150px; 
+            min-height: 200px; 
+            position: relative; 
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%; 
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .image-details {
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    height: 200px;
+    width: 80%; 
+    max-width: 300px; 
+    overflow: auto; 
+        }
+
+        .image:hover .image-details {
+            display: block; 
+        }
+
+        .image-heading {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .image-description {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
+                
+            </ul>
+                
+        </nav>
+        
+    </header>
+<h1>Mountains</h1>
+
+<div class="container">
+    <div class="images">
+        <div class="image">
+            <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSpkXaJ3D3Kx_vGk_uD-zBGYve6vjskiHxpX-MSK8nBYjKWNFksloaYtw5XF3EwVxHc" alt="Jim Corbett National Park">
+            <div class="image-details">
+                <h3 class="image-heading">Jim Corbett National Park</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Nainital district of Uttarakhand state</strong>
+                    <br>
+                    <strong> AREA:</strong>	1,318 km²
+                    <br>
+                     <strong>ELEVATION:</strong>1,300 to 4,000 ft
+                    <br>
+                    <strong>ALSO KNOWN AS:</strong>Hailey National Park
+                    
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcSG5XyeRnsS7MKAqS5u0m0Dle-ldopoO5yyBGQajtRNo1cFANCtSLm0EPeDgKp_pvYb" alt="Nilgiri Biosphere Reserve">
+            <div class="image-details">
+                <h3 class="image-heading">Nilgiri Biosphere Reserve</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>South India</strong>
+                    <br>
+                    <strong> AREA:</strong>5,520 km2 (2,130 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong>80 to 2,600 m (260 to 8,530 ft)
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQMPr13BobuybfaNr0nRY2RRKBzRHseo8MIzl6l0cI2gBdp5PhmlKKNaSXrOF0RaiTw" alt="Periyar National Park">
+            <div class="image-details">
+                <h3 class="image-heading">Periyar National Park</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>Idukki and Pathanamthitta in Kerala, India</strong>
+                    <br>
+                    <strong> AREA:</strong>	350 km2 (140 sq mi)
+                     <strong>ELEVATION:</strong> 5600 ft to 4000 ft
+                    <br>
+                    <strong>ALSO KNOWN AS:</strong>Thekkady
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://tnswa.org/image/14ramsarsite/pichavaram/pichavaram%20baoting.jpg" alt="Pichavaram Mangrove Forest">
+            <div class="image-details">
+                <h3 class="image-heading">Pichavaram Mangrove Forest</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>Parangipettai near Chidambaram in Cuddalore District, Tamil Nadu, India</strong>
+                    <br>
+                    <strong> AREA:</strong>	14.79 km2 (5.71 sq mi)
+                     <strong>ELEVATION:</strong>6 m (20 ft)
+                    <br>
+                    <strong>ALSO KNOWN AS:</strong>walking trees
+                       </p>
+            </div>
+        </div>
+        <!-- Add more image elements as needed -->
+    </div>
+    <div class="section">
+        <p>move back to explore page</p>
+        <a href="explorepage.html">Explorepage</a>
+      </div>
+</div>
+
+</body>
+</html>

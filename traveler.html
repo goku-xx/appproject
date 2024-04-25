@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traveler</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: rgb(251, 251, 251);
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #ffffff;
+        }
+
+        .container {
+    position: relative;
+    height: 600px; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.booking-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1; 
+}
+
+.booking-text h1 {
+    font-size: 48px;
+    font-weight: bold;
+    font-weight: 100;
+}
+
+
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>̥
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html">Home</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/aboutus.html">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/tour.html">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/traveler.html"class="active">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>̥
+            </ul>
+                
+        </nav>
+    </header>
+    <div class="container">
+        <video autoplay muted loop id="video-background">
+            <source src="traveller.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="booking-text">
+        <div class="packages"><h1><br>Bookings</h1></div> 
+     </div> 
+    <h2>Book a Train</h2>
+    <form action="/book_train" method="post">
+        <label for="train_name">Train Name:</label>
+        <input type="text" id="train_name" name="train_name" required>
+        <br>
+        <label for="departure_date">Departure Date:</label>
+        <input type="date" id="departure_date" name="departure_date" required>
+        <br>
+        <label for="departure_time">Departure Time:</label>
+        <input type="time" id="departure_time" name="departure_time" required>
+        <br>
+        <input type="submit" value="Book Train">
+    </form>
+
+    <h2>Book a Hotel</h2>
+    <form action="/book_hotel" method="post">
+        <label for="hotel_name">Hotel Name:</label>
+        <input type="text" id="hotel_name" name="hotel_name" required>
+        <br>
+        <label for="check_in_date">Check-in Date:</label>
+        <input type="date" id="check_in_date" name="check_in_date" required>
+        <br>
+        <label for="check_out_date">Check-out Date:</label>
+        <input type="date" id="check_out_date" name="check_out_date" required>
+        <br>
+        <input type="submit" value="Book Hotel">
+    </form>
+
+    <h2>Check Restaurants</h2>
+    <form action="/check_restaurants" method="get">
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" required>
+        <br>
+        <input type="submit" value="Check Restaurants">
+    </form>
+</body>
+
+</html>

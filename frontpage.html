@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Local Tourism Website</title>
+   <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f9f9f9;
+      background-image: url("https://images.pexels.com/photos/775201/pexels-photo-775201.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      margin: hidden;
+      padding: 20px;
+    }
+    header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration:none;
+            height: 20%;
+         }
+
+        nav ul li a.active {
+            background-color: rgb(235, 138, 135);
+            color: #000000;
+        }
+    h1 {
+      color: #204051;
+      text-align: center;
+      margin-bottom: hidden;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #ffff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .section h2 {
+      color: #070707;
+      margin-bottom: 15px;
+      font-size: 1.5em;
+    }
+
+    .item {
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      background-color: #f5f5f5;
+      border: 1px solid #ddd;
+      color: #333;
+    }
+
+    .item strong {
+      color: #204051;
+    }
+
+    .nature-photos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .nature-photo {
+      width: calc(33.33% - 10px);
+      margin-bottom: 10px;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .nature-photo img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .nature-photo img:hover {
+      transform: scale(1.1);
+    }
+    form {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      color: #204051;
+    }
+
+    input {
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
+      margin-bottom: 15px;
+    }
+
+    button {
+      background-color: #204051;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #001f3f;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <img src="logo.jpg" alt="destiny finder">
+    </div>
+    <nav>
+        <ul>
+            
+            <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
+            <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
+            <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
+            <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
+            <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+            <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
+            
+        </ul>
+            
+    </nav>
+    
+</header>
+  <div class="container">
+    <h1>Tourism Guider</h1>
+
+    <div class="section">
+      <h2>Places to Visit</h2>
+      <div class="item">
+        <strong>Place 1:</strong> Isha Yoga Centre.
+      </div>
+      <div class="item">
+        <strong>Place 2:</strong> Siruvani Waterfalls.
+      </div>
+      <div class="item">
+        <strong>Place 3:</strong> Ooty Hill Station.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Food Recommendations</h2>
+      <div class="item">
+        <strong>Food 1:</strong> Try Kongu Style foods.
+      </div>
+      <div class="item">
+        <strong>Food 2:</strong> Try foods in Multicusine Restaraunts in Coimbatore.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Nature Pictures</h2>
+      <div class="nature-photos">
+        <div class="nature-photo">
+          <img src="https://wallpaperaccess.com/full/6503262.jpg">
+        </div>
+        <div class="nature-photo">
+          <img src="https://blogs.revv.co.in/blogs/wp-content/uploads/2020/05/Siruvani-Waterfalls.jpg">
+        </div>
+        <div class="nature-photo">
+          <img src="https://www.global-gallivanting.com/wp-content/uploads/2016/05/Ooty_aerial_view-01.jpeg">
+        </div>
+      </div>
+    </div>
+    <form>
+      <label for="preferences">Enter your preferences or requirements:</label>
+      <input type="text" id="preferences" name="preferences" placeholder="E.g., Historical sites, Adventure activities, etc.">
+      <button type="button" onclick="checkTouristPlaces()">Check Tourist Places</button>
+    </form>
+  </div>
+
+  <script>
+    function checkTouristPlaces() {
+      window.location.href = 'explorepage.html';
+    }
+  </script>
+</body>
+</html>

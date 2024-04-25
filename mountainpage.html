@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #000000;
+        }
+        h1 {
+            color: #204051;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 0 auto;
+            background-color: #ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 0px;
+        }
+
+        .section h2 {
+            color: #070707;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; 
+        }
+
+        .image {
+            flex: 1; 
+            max-width: calc(25% - 10px); 
+            min-width: 150px; 
+            min-height: 200px; 
+            position: relative; 
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%; 
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .image-details {
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    height: 200px;
+    width: 80%; 
+    max-width: 300px; 
+    overflow: auto; 
+        }
+
+        .image:hover .image-details {
+            display: block; 
+        }
+
+        .image-heading {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .image-description {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
+                
+            </ul>
+                
+        </nav>
+        
+    </header>
+
+<h1>Mountains</h1>
+
+<div class="container">
+    <div class="images">
+        <div class="image">
+            <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcSpkXaJ3D3Kx_vGk_uD-zBGYve6vjskiHxpX-MSK8nBYjKWNFksloaYtw5XF3EwVxHc" alt="Munnar">
+            <div class="image-details">
+                <h3 class="image-heading">MUNNAR</h3>
+                <p class="image-description"><strong>LOCATION:</strong> Idukki district of the southwestern Indian state of Kerala.</strong><br><strong> AREA:</strong> 187 km2 (72 sq mi)<br> <strong>ELEVATION:</strong> 1,532 m (5,026 ft) <br><strong>WEBSITE:</strong>>: keralatourism.org/destination<br> <strong>ALSO KNOWN AS:</strong><em> "Kashmir of South India" </em>
+                </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://static.toiimg.com/photo/93319746.cms" alt="ladakh">
+            <div class="image-details">
+                <h3 class="image-heading">LADAKH</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Eastern portion of the larger Kashmir region </strong>
+                    <br>
+                    <strong> AREA:</strong> 59,146 km2 (22,836 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong> 7,742 m (25,400 ft)
+                    <br>
+                    <strong>WEBSITE:</strong>>: ladakh.nic.in
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Kanchapa (Land of snow) and Ripul (Country of mountains) </em>
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://www.tourmyindia.com/blog//wp-content/uploads/2020/12/Coorg.jpg" alt="coorg">
+            <div class="image-details">
+                <h3 class="image-heading">COORG</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Kodagu district is an administrative district in the Karnataka </strong>
+                    <br>
+                    <strong> AREA:</strong> 4,102 km2 (1,584 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong> 984 m (3,228 ft)
+                    <br>
+                    <strong>WEBSITE:</strong>>: kodagu.nic.in
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcSg50AFbadyWm-pye4CU2ZVFuA2gWOGhg6PKKHGIdRl7zRP6ONh2kqP72trtTF2oTY4" alt="Manali">
+            <div class="image-details">
+                <h3 class="image-heading">MANALI</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> near <em>Kullu town</em> in Kullu district in the Indian state of Himachal Pradesh. </strong>
+                    <br>
+                    <strong> AREA:</strong> 994.64 square kilometer
+                    <br>
+                     <strong>ELEVATION:</strong> 2,050 m (6,730 ft)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Valley of the Gods </em>
+                       </p>
+            </div>
+        </div>
+        <!-- Add more image elements as needed -->
+    </div>
+    <div class="section">
+        <p>move back to explore page</p>
+        <a href="explorepage.html">Explorepage</a>
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: url('https://images.pexels.com/photos/130111/pexels-photo-130111.jpeg?auto=compress&cs=tinysrgb&w=600') center/cover no-repeat;
+}
+
+form {
+   background:scroll;
+    width: 350px;
+    padding: 75px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(8, 8, 8, 0.86);
+    text-align:center;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-style:initial;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+.textboxdiv {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 50%;
+    height: 50px;
+    width: 100%;
+}
+
+.textboxdiv input {
+    background: rgb(203, 189, 216);
+    border: none;
+    outline: none;
+    width: 20%;
+    padding: 30px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.loginBtn {
+    height: 50px;
+    width: 80%;
+    border: none;
+    outline: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(0, 0, 0, 0.747);
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s, font-size 0.3s;
+}
+
+.loginBtn:hover {
+    background: linear-gradient(to right, rgb(213, 207, 208), #534b4f);
+    font-size: 17px;
+}
+
+.signup {
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup a {
+    color: black;
+}
+.signup a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: rgb(251, 251, 251);
+            color: #ffffff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 100px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #ffffff;
+        }
+        
+        .container {
+            background-image: url("https://www.shutterstock.com/image-illustration/blue-background-bright-sky-border-260nw-2052322529.jpg");
+            background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px; 
+    border-radius: 5px;
+    overflow: hidden;
+
+        }
+        
+         .container img {
+            width: 1000px;
+            height: 100%;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+         }
+
+         .packages{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size:30px;
+            font-style: oblique;
+            text-align: center;
+            color:#033b68;
+
+         }
+        .tour-package {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .tour-package h2 {
+            color: #333333;
+            margin-top: 0;
+        }
+        
+        .tour-package p {
+            color: #666666;
+        }
+        
+        .tour-package .price {
+            font-weight: bold;
+            color: #204051;
+            font-size: 1.2em;
+        }
+        
+        .tour-package .button {
+            background-color: #204051;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .tour-package .button:hover {
+            background-color: #001f3f;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>̥
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/tour.html" class="active">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/traveler.html">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>̥
+            </ul>
+                
+        </nav>
+    </header>
+    
+    <div class="container">
+       <div class="packages"><h1><br>Tour Packages</h1></div> 
+    </div> 
+        <div class="tour-package">
+            <h2>Domestic Tour Package 1</h2>
+            <p>Description of the tour package goes here. This package includes visits to various destinations within India.</p>
+            <p class="price">$1000</p>
+            <a href="#" class="button">Book Now</a>
+        </div>
+        
+        <div class="tour-package">
+            <h2>International Tour Package 1</h2>
+            <p>Description of the tour package goes here. This package includes visits to various destinations outside India.</p>
+            <p class="price">$2000</p>
+            <a href="#" class="button">Book Now</a>
+        </div>
+        
+        <!-- Add more tour packages as needed -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #000000;
+        }
+        h1 {
+            color: #204051;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 0 auto;
+            background-color: #ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 0px;
+        }
+
+        .section h2 {
+            color: #070707;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; 
+        }
+
+        .image {
+            flex: 1; 
+            max-width: calc(25% - 10px); 
+            min-width: 150px; 
+            min-height: 200px; 
+            position: relative; 
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%; 
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .image-details {
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    height: 200px;
+    width: 80%; 
+    max-width: 300px; 
+    overflow: auto; 
+        }
+
+        .image:hover .image-details {
+            display: block; 
+        }
+
+        .image-heading {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .image-description {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
+                
+            </ul>
+                
+        </nav>
+        
+    </header>
+<h1>Mountains</h1>
+
+<div class="container">
+    <div class="images">
+        <div class="image">
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcRcUGJ0SYayR-o7K7wg8BLFeLZF2TxRJYqRpm4mAjK8tAVmXEcOP6p4yd5Mt0FkVQLE" alt="Varkala">
+            <div class="image-details">
+                <h3 class="image-heading">VARKALA</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> major coastal municipality situated in the northern suburb of Trivandrum,Kerala. </strong>
+                    <br>
+                    <strong> AREA:</strong> 14.87 km2 (5.74 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong> 58 m (190 ft)
+                    <br> 
+                    <strong>WEBSITE:</strong>www.varkalamunicipality.in
+                    <br>
+                    <strong>ALSO KNOWN AS:</strong><em> Dakshin Kashi (Benares of the South). </em>
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://www.treebo.com/blog/wp-content/uploads/2017/12/Tropical-beach-No.-5-on-Havelock-island.jpg" alt="Andaman Islands">
+            <div class="image-details">
+                <h3 class="image-heading">ANDAMAN ISLANDS</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>Bay of Bengal </strong>
+                    <br>
+                    <strong> AREA:</strong> 6,408 km2 (2,474 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong> 732 m (2402 ft)
+                    <br> 
+                    <strong>WEBSITE:</strong>www.andaman.nic.in
+                    </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://www.acroncandolimresortgoa.com/explore-goa/beaches-in-goa/palolem-beach/images/palolem-beach.jpg" alt="Palolem Beach">
+            <div class="image-details">
+                <h3 class="image-heading">Palolem Beach</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>Canacona in southern Goa </strong>
+                    <br>
+                    <strong> AREA:</strong> 1.61 km
+                    <br>
+                     <strong>ELEVATION:</strong> 30 m (90 ft.)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Paradise Beach </em>
+                       </p>
+            </div>
+
+        </div>
+        <div class="image">
+            <img src="https://assets-global.website-files.com/5b56319971ac8c7475a9d877/5ee481817da4561eb9621b3e_Radhanagar-.JPG" alt="Radhanagar">
+            <div class="image-details">
+                <h3 class="image-heading">Radhanagar</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong>Bay of Bengal</strong>
+                    <br>
+                    <strong> AREA:</strong>92.2 km2 (35.6 sq mi)
+                    <br>
+                     <strong>ELEVATION:</strong> 167 m (548 ft)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Havelock Island, </em>
+                       </p>
+            </div>
+        </div>
+        <!-- Add more image elements as needed -->
+    </div>
+    <div class="section">
+        <p>move back to explore page</p>
+        <a href="explorepage.html">Explorepage</a>
+      </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mountains</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+
+        .logo img {
+            width: 120px;
+            padding-left: 20px;
+            height: 80px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-top: 5px;
+            margin-bottom: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 50px 10px; 
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        nav ul li a.active {
+            background-color: skyblue;
+            color: #000000;
+        }
+        h1 {
+            color: #204051;
+            text-align: center;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .container {
+            margin: 0 auto;
+            background-color: #ffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 0px;
+        }
+
+        .section h2 {
+            color: #070707;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .images {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px; 
+        }
+
+        .image {
+            flex: 1; 
+            max-width: calc(25% - 10px); 
+            min-width: 150px; 
+            min-height: 200px; 
+            position: relative; 
+        }
+
+        .image img {
+            width: 100%;
+            height: 100%; 
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+        .image-details {
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+    height: 200px;
+    width: 80%; 
+    max-width: 300px; 
+    overflow: auto; 
+        }
+
+        .image:hover .image-details {
+            display: block; 
+        }
+
+        .image-heading {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .image-description {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="destiny finder">
+        </div>
+        <nav>
+            <ul>
+                
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html" >Home</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/about.html">About Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/explorepage.html" class="active">Tours</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/Traveler.html">Traveler</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/new.html#world-map">Contact Us</a></li>
+                <li><a href="file:///C:/Users/thami/tourist-app/public/login.html">Login</a></li>
+                
+            </ul>
+                
+        </nav>
+        
+    </header>
+<h1>Mountains</h1>
+
+<div class="container">
+    <div class="images">
+        <div class="image">
+            <img src="https://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQDeBdUU49V_zvHcAkX8zRLnDate5GxNLL6uvakNJYKmKbUdLqdVRZV8Z3KbDsTDuBY" alt="Athirapally Waterfalls">
+            <div class="image-details">
+                <h3 class="image-heading">Athirapally Waterfalls</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Chalakudy Taluk of Thrissur District in Kerala</strong>
+                    <br>
+                    <strong> HEIGHT:</strong>25 m (82 ft)
+                    <br>
+                     <strong>ELEVATION:</strong> 120 m (390 ft)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> The Niagara of South India </em>
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="http://t1.gstatic.com/images?q=tbn:ANd9GcSLPFv64qWznWv5EbHQbKQ_nvNlS7taDgWNfM5REt0LF2ylZjIW" alt="Hogenakal Waterfalls ">
+            <div class="image-details">
+                <h3 class="image-heading">Hogenakal Waterfalls </h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Kaveri river on the border between Dharmapuri district of Tamil Nadu and Chamrajnagar district of Karnataka</strong>
+                    <br>
+                    <strong> HEIGHT:</strong>259 metres (850 ft)
+                    <br>
+                     <strong>ELEVATION:</strong>700 m (2,300 ft)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Niagara Falls of India </em>
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://t3.gstatic.com/licensed-image?q=tbn:ANd9GcTWCnG_GDEA6hNY2lpnXeTOjh7jmHUAd2xjWZiC-4GELf4r67E87d8KA6ESWg5HEwHA" alt="Jog Falls">
+            <div class="image-details">
+                <h3 class="image-heading">Jog Falls</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> Sharavati river located in Siddapura taluk, Uttara Kannada District</strong>
+                    <br>
+                    <strong> HEIGHT:</strong>253 m (830 ft)
+                    <br>
+                     <strong>ELEVATION:</strong>488 m (1,601 ft)
+                    <br> 
+                    <strong>ALSO KNOWN AS:</strong><em> Gersoppa Falls </em>
+                       </p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="https://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQa9lAnZtfDSVrw5P5G147spgPrAmu_fl3Qcwj0XZ_yK2I8wTo0l3FuCRb3QUqydHAy" alt="Shivanasamudra Falls">
+            <div class="image-details">
+                <h3 class="image-heading">Shivanasamudra Falls</h3>
+                <p class="image-description">
+                    <strong>LOCATION:</strong> borders of Malavalli, Mandya and Kollegala, Chamarajanagara, in Karnataka, India, situated along the river Kaveri</strong>
+                    <br>
+                    <strong> HEIGHT:</strong>90 metres (300 ft)
+                    <br>
+                     <strong>ELEVATION:</strong>90 metres
+                    
+                       </p>
+            </div>
+        </div>
+        <!-- Add more image elements as needed -->
+    </div>
+    <div class="section">
+        <p>move back to explore page</p>
+        <a href="explorepage.html">Explorepage</a>
+      </div>
+</div>
+
+</body>
+</html>
